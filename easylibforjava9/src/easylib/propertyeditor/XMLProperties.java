@@ -56,6 +56,7 @@ class XMLProperties  {
 		} catch (FileNotFoundException e) {
 			o = ClassLoader.getSystemResourceAsStream(XMLFILE); // default
 		}
+		// Do not close o here. It is argument to next message:
 		return inputstream2properties(o);
 	}
 
