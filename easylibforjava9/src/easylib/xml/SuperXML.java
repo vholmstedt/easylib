@@ -40,6 +40,7 @@ public class SuperXML {
 		 
          try {
 			Transformer transformer = transformerFactory.newTransformer();
+		        transformer.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "2");
 			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			transformer.setOutputProperty(OutputKeys.ENCODING, "utf8");
 			 transformer.transform(source, file);
