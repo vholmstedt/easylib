@@ -1,2 +1,2 @@
 # easylib
-Easylib version that handles java 9 xml 
+Easylib version that can handle java 9 xml 
